@@ -13,6 +13,8 @@ It is reasonable to assume that Wikipedia searches reflect interest as users mus
 <p align="justify">
 We are using ZenHub to create and track our issues effectively. As this project is about continous exploration, we'll be using the Kanban methodology. We'll discuss, prioritize, distribute and reassess the issues during our weekly meetings.
 </p>
+
+
 Internal Milestones V1:
 1. Week 8 : Milestone 2 deadline
 2. Weeks 9 & 10 : Homework 2
