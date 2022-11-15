@@ -22,3 +22,5 @@ Internal Milestones V1:
 4. Week 12 : Macro-analysis of countries done, deep-dive into select countries
 5. Week 13 : Deep-dive finised, begin to create website and write datastory
 6. Week 14 : Cleaning, writing and submission of project
+
+## Organisation within the team
