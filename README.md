@@ -24,3 +24,5 @@ Internal Milestones V1:
 6. Week 14 : Cleaning, writing and submission of project
 
 ## Organisation within the team
+
+## Question for the TA
