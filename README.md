@@ -5,19 +5,19 @@
 It is reasonable to assume that Wikipedia searches reflect interest as users must actively want to know more about a subject to search it on Wikipedia. Using this hypothesis, we seek to assess the “digital” propagation of the COVID-19 pandemic by looking at the pageview statistics of COVID-related pages across different languages and comparing this to the geographical propagation of the virus. We can thus link the “mental” and physical presence of the virus across countries and analyse how it impacted measures taken by the governments and the mobility of the populations.  Did populations that were strongly interested in COVID-19 restrict their mobility more? In a second stage, we are going to do an in-depth analysis of a select few countries and compare the populations interest and mobility to their trust of their government. Do interested populations have more trust their government and science? 
 </p>
 
-## Research quesions
+## Research questions
 <ol align="justify">
     <li>How did the physical propagation of the COVID-19 pandemic affect the interest of people about COVID-19 measured using Wikipedia pageviews of articles related to COVID-19?</li>
     <li>Did the interest of populations toward COVID-19 impact the measures taken by governments and does it reflect in the mobility?</li>
-    <li>Will people that are more or less confident about their politics look more, or less at COVID-related Wikipedia pages? Does this reflect in their mobility during lockdowns ?</li>
+    <li>Will people that are more or less confident about their politics look more, or less at COVID-related Wikipedia pages? Does this reflect in their mobility during lockdowns?</li>
 </ol>
 
 ## Datasets
 <ol align="justify">
-    <li><strong>Full CoronaWiki article list</strong>. We plan to analyze more countries that the dataset provided in the ADA course. Therfore,Shay Nowick, Sr. Data Scientist at Wikimedia Foundation, provided us the full dataset: it contains all COVID-related article titles in 175 languages. The COVID-related articles were identified using the pagelinks to the articles "COVID-19" or "COVID-19 Pandemic". Before receiving the dataset, we started building a script to scrape all the information from Wikipedia. See the incomplete pipeline in <strong> FILE NAME HERE </strong>.
+    <li><strong>Full CoronaWiki article list</strong>. We plan to analyze more countries that the dataset provided in the ADA course. Shay Nowick, Sr. Data Scientist at Wikimedia Foundation, provided us the full dataset: it contains all COVID-related article titles in 175 languages. The COVID-related articles were identified using the pagelinks to the articles "COVID-19" or "COVID-19 Pandemic". Before receiving the dataset, we started building a script to scrape all the information from Wikipedia. See the incomplete pipeline in <strong> FILE NAME HERE </strong>.
     <ul align="justify">
         <li>Languages with less than 10 articles are removed: 60 remaining languages.</li>
-        <li>Languages that are not specific to a country (ex. English, Spanish) are removed in a second phase : <strong>À compléter</strong> remaining languages.</li>
+        <li>Languages that are not specific to a country (ex. English, Spanish) are removed in a second phase: <strong>À compléter</strong> remaining languages.</li>
         <li>We will then use the articles titles of this dataset to download all pageviews statistics using the Wikipedia REST API and thus create the dataset needed to answer our research questions.</li>
     </ul></li>
     <li><a href="https://www.google.com/covid19/mobility/"><strong>Google Mobility</strong></a>: Provided in the scope of the ADA course, this dataset contains a mobility score for every country categorized by 6 different places. We will extract the data for our countries of interests in which we seek to analyze the mobility behavior.</li>
@@ -28,7 +28,7 @@ It is reasonable to assume that Wikipedia searches reflect interest as users mus
 ## Methods
 ### 1. Data scraping, pre-processing and dataframes creation
 <ul align="justify">
-    <li>Dataset pageview_df: we used the dataset of all COVID-related article titles in 175 languages to scrape the pageview statistics using the REST API provided by wikipedia. 
+    <li>Dataset pageview_df: we used the dataset of all COVID-related article titles in 175 languages to scrape the pageview statistics using the REST API provided by Wikipedia. 
     <ul>
         <li>All languages that had less than 10 articles were discarded for being unsignificant.
         </li>
@@ -49,9 +49,9 @@ It is reasonable to assume that Wikipedia searches reflect interest as users mus
     
 </ul>
 
-### 2. First vizualisations of COVID cases, deaths and COVID-related pageviews
+### 2. First visualizations of COVID cases, deaths and COVID-related pageviews
 <ul align="justify">
-    <li>Plotings of evolutions of cases, deaths and pageviews.
+    <li>Plots of evolutions of cases, deaths and pageviews.
     </li>
     <li>Creation of interactive maps of COVID cases, of COVID death and of COVID-related articles pageviews.
     </li>
@@ -59,17 +59,17 @@ It is reasonable to assume that Wikipedia searches reflect interest as users mus
     </li>
 </ul>
 
-### 3. Identification of interessting countries to analyze
+### 3. Identification of interesting countries to analyze
 <ul align="justify">
     <li>Pearson correlation of COVID cases and COVID-related articles pageviews, and COVID deaths and COVID-related articles pageviews.
     </li>
-    <li>Use unsupervised clutesting methods to indentify countries in which populations were highly interested in information regarding COVID-19, and infentifying countries in which the correlation was similar (highly positive, negative or no correlation). From there, we will pick a representative sample of 3 to 5 countries to analyzse in more depth.
+    <li>Use unsupervised clustering methods to identify countries in which populations were highly interested in information regarding COVID-19, and identifying countries in which the correlation was similar (highly positive, negative or no correlation). From there, we will pick a representative sample of 3 to 5 countries to analyze in more depth.
     </li>
 </ul>
 
 ### 4. Investigation of mobility and trust in select countries
 <ul align="justify">
-    <li>Question the mobility_df to identify links between information seeking behavior and mobility during the covid period. We seek to answer the question : Do countries in which the population was more interested in COVID have earlier, longer and stricter lockdowns? Do interested populations restrict their mobility more? Using pearson correlation and visual plots.
+    <li>Question the mobility_df to identify links between information seeking behavior and mobility during the covid period. We seek to answer the question: Do countries in which the population was more interested in COVID have earlier, longer and stricter lockdowns? Do interested populations restrict their mobility more? Using pearson correlation and visual plots.
     </li>
     <li>Investigate the trust_df to identify links between information seeking behavior and trust of the population towards their government or the scientific community.
     </li>
@@ -84,12 +84,12 @@ Internal Milestones V1:
 2. Weeks 9 & 10 : Homework 2,
 3. Week 11 : Mappings of the propagation done, begin analysis and deep-dive,
 4. Week 12 : Macro-analysis of countries done, deep-dive into select countries,
-5. Week 13 : Deep-dive finised, begin to create website and write datastory,
+5. Week 13 : Deep-dive finished, begin to create website and write datastory,
 6. Week 14 : Cleaning of code, proofread of writing and submission of project.
 
 ## Organisation within the team
 <p align="justify">
-We are using ZenHub to create and track our issues effectively. As this project is about continous exploration, we'll be using the Kanban methodology. We'll discuss, prioritize, distribute and reassess the issues during our weekly meetings.
+We are using ZenHub to create and track our issues effectively. As this project is about continuous exploration, we'll be using the Kanban methodology. We'll discuss, prioritize, distribute, and reassess the issues during our weekly meetings.
 Team members will be free to participate in all different tasks depending on priority of said tasks. General distribution is as follows, but is neither final nor exclusive:
 <ol>
   <li>Data pipelines and data wrangling: Robin & Carl,</li>
