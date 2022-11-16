@@ -6,14 +6,13 @@ It is reasonable to assume that Wikipedia searches reflect interest as users mus
 </p>
 
 ## Research quesions
-
 1. How did the physical propagation of the COVID-19 pandemic affect the interest of people about COVID-19 measured using Wikipedia pageviews of articles related to COVID-19?
 2. Did the different lockdowns and modified mobility impact the interest of populations toward COVID-19? 
 3. Will people that are more, or less confident about their politics look more, or less at COVID-related Wikipedia pages? Does this reflect in their mobility during lockdowns ?
 
 ## Datasets
 <p align="justify">
-<ol>
+<ol align="justify">
 <li><strong>Full CoronaWiki article list</strong>. We plan to analyze more countries that the dataset provided in the ADA course. Therfore,Shay Nowick, Sr. Data Scientist at Wikimedia Foundation, provided us the full dataset: it contains all COVID-related article titles in 175 languages. The COVID-related articles were identified using the pagelinks to the articles "COVID-19" or "COVID-19 Pandemic". Before receiving the dataset, we started building a script to scrape all the information from Wikipedia. See the incomplete pipeline in <strong> FILE NAME HERE </strong>.
 <ul>
     <li>Languages with less than 10 articles are removed: 60 remaining languages.</li>
@@ -27,7 +26,7 @@ It is reasonable to assume that Wikipedia searches reflect interest as users mus
 </p>
 
 ## Methods
-### 1. Data scraping, pre-processing and dataframes creation.
+### 1. Data scraping, pre-processing and dataframes creation
 - 
 ### 2. First vizualisations of COVID cases, deaths and COVID-related pageviews
 
@@ -35,7 +34,7 @@ It is reasonable to assume that Wikipedia searches reflect interest as users mus
 
 ### 4. Investigation of mobility and trust in select countries
 
-### 5. Site building and Datastory 
+### 5. Site building and Datastory
 
 ## Timeline
 Internal Milestones V1:
