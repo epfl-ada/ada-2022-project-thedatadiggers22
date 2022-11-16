@@ -21,11 +21,12 @@ It is reasonable to assume that Wikipedia searches reflect interest as users mus
     <li>We will then use the articles titles of this dataset to download all pageviews statistics using the Wikipedia REST API and thus create our dataset needed to answer our research questions.</li>
 </ol>
 </li>
-<li>[Google Mobility](https://www.google.com/covid19/mobility/). Provided in the scope of the ADA course, this dataset contains a mobility score for every country categorized by 6 different places. We will extract the data for our countries of interests in which we seek to analyze the mobility behavior.</li>
-<li>[Population Trust](https://ourworldindata.org/trust)**à compléter**</li>
-<li>[COVID-19 Dataset](https://ourworldindata.org/explorers/coronavirus-data-explorer). This dataset contains all information relative to the COVID-19 pandemic in the form of a timeseries per country. We will only use the cases per country and the deaths per country.</li>
+<li><a href="https://www.google.com/covid19/mobility/">Google Mobility</a>: Provided in the scope of the ADA course, this dataset contains a mobility score for every country categorized by 6 different places. We will extract the data for our countries of interests in which we seek to analyze the mobility behavior.</li>
+<li><a href="https://ourworldindata.org/trust">Population Trust</a>:**à compléter**</li>
+<li><a href="https://ourworldindata.org/explorers/coronavirus-data-explorer">COVID-19 Dataset</a>: This dataset contains all information relative to the COVID-19 pandemic in the form of a timeseries per country. We will only use the cases per country and the deaths per country.</li>
 </ol>
 </p>
+
 ## Methods
 ### Data scraping, pre-processing and dataframes.
 - 
