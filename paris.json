@@ -1,0 +1,1651 @@
+{
+ "items": [
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020010100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 7057
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020010200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6462
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020010300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6090
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020010400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5906
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020010500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5852
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020010600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5914
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020010700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6151
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020010800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6103
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020010900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6215
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020011000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5951
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020011100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5652
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020011200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6436
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020011300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 7102
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020011400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6887
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020011500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6733
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020011600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6900
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020011700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6237
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020011800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6546
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020011900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6288
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020012000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6623
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020012100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 7085
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020012200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 8034
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020012300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6668
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020012400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6129
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020012500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5584
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020012600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5742
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020012700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6453
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020012800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6537
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020012900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6496
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020013000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6295
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020013100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6105
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020020100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6692
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020020200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6104
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020020300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6563
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020020400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6678
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020020500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6350
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020020600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6867
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020020700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5965
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020020800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5468
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020020900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5897
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020021000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 8280
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020021100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6619
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020021200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6053
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020021300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6357
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020021400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6886
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020021500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5694
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020021600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6341
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020021700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6658
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020021800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6874
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020021900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6508
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020022000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6244
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020022100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5986
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020022200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5545
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020022300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6006
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020022400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6269
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020022500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 7234
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020022600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 7902
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020022700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 7515
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020022800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5794
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020022900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5491
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020030100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5809
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020030200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5938
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020030300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5968
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020030400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5809
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020030500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6883
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020030600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6559
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020030700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4961
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020030800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5629
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020030900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5942
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020031000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5856
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020031100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5623
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020031200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5333
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020031300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4487
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020031400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4276
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020031500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4695
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020031600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4865
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020031700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4893
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020031800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4983
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020031900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4630
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020032000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4860
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020032100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5104
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020032200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5379
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020032300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5254
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020032400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5769
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020032500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5896
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020032600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6141
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020032700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5783
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020032800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5522
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020032900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6524
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020033000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6739
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020033100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6551
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020040100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6341
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020040200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6388
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020040300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6733
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020040400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6174
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020040500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6861
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020040600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6763
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020040700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 7153
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020040800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6139
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020040900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5840
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020041000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6397
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020041100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5727
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020041200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6064
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020041300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6209
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020041400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6298
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020041500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6815
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020041600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6502
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020041700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6210
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020041800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5869
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020041900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6009
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020042000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6599
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020042100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6121
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020042200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5919
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020042300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6119
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020042400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5800
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020042500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5577
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020042600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5991
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020042700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6189
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020042800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6421
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020042900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6350
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020043000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5958
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020050100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6028
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020050200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5448
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020050300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5820
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020050400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5965
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020050500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5956
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020050600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6497
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020050700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6007
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020050800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5680
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020050900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5212
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020051000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5985
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020051100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5923
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020051200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5862
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020051300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 6021
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020051400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5856
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020051500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5491
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020051600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4961
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020051700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5339
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020051800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5724
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020051900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5580
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020052000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5395
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020052100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5347
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020052200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5155
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020052300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4648
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020052400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4863
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020052500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5628
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020052600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5728
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020052700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5312
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020052800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5448
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020052900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4886
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020053000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4397
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020053100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4547
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020060100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4822
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020060200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4634
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020060300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4791
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020060400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4937
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020060500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5218
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020060600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4302
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020060700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4707
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020060800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4754
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020060900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4809
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020061000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4848
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020061100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 5430
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020061200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4586
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020061300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4155
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020061400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4587
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020061500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4697
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020061600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4338
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020061700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4415
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020061800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4379
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020061900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4081
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020062000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4061
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020062100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4121
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020062200",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4263
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020062300",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4147
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020062400",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4351
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020062500",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4099
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020062600",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4135
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020062700",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4133
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020062800",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4694
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020062900",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4778
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020063000",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4387
+  },
+  {
+   "project": "en.wikipedia",
+   "article": "Paris",
+   "granularity": "daily",
+   "timestamp": "2020070100",
+   "access": "all-access",
+   "agent": "user",
+   "views": 4213
+  }
+ ]
+}
