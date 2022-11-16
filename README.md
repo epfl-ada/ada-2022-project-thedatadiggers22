@@ -8,8 +8,8 @@ It is reasonable to assume that Wikipedia searches reflect interest as users mus
 ## Research quesions
 <ol align="justify">
     <li>How did the physical propagation of the COVID-19 pandemic affect the interest of people about COVID-19 measured using Wikipedia pageviews of articles related to COVID-19?</li>
-    <li>Did the different lockdowns and modified mobility impact the interest of populations toward COVID-19?</li>
-    <li>Will people that are more, or less confident about their politics look more, or less at COVID-related Wikipedia pages? Does this reflect in their mobility during lockdowns ?</li>
+    <li>Did the interest of populations toward COVID-19 impact the measures taken by governments and does it reflect in the mobility?</li>
+    <li>Will people that are more or less confident about their politics look more, or less at COVID-related Wikipedia pages? Does this reflect in their mobility during lockdowns ?</li>
 </ol>
 
 ## Datasets
@@ -28,7 +28,7 @@ It is reasonable to assume that Wikipedia searches reflect interest as users mus
 ## Methods
 ### 1. Data scraping, pre-processing and dataframes creation
 <ul align="justify">
-    <li>pageview_df: we used the dataset of all COVID-related article titles in 175 languages to scrape the pageview statistics using the REST API provided by wikipedia. 
+    <li>Dataset pageview_df: we used the dataset of all COVID-related article titles in 175 languages to scrape the pageview statistics using the REST API provided by wikipedia. 
     <ul>
         <li>All languages that had less than 10 articles were discarded for being unsignificant.
         </li>
@@ -40,38 +40,43 @@ It is reasonable to assume that Wikipedia searches reflect interest as users mus
         </li>
     </ul>
     </li> 
-    <li>mobility_df: Google mobility dataset from different countries. We again did not use the dataset provided in the course but downloaded an enriched version directly from Google to include more countries.
+    <li>Dataset mobility_df: Google mobility dataset from different countries. We again did not use the dataset provided in the course but downloaded an enriched version directly from Google to include more countries.
     </li>
-    <li>trust_df: <strong>à compléter</strong>
+    <li>Dataset trust_df: <strong>à compléter</strong>
     </li>
-    <li>covid_df: dataset with COVID cases and deaths per country.
+    <li>Dataset covid_df: dataset with COVID cases and deaths per country.
     </li>
     
 </ul>
 
 ### 2. First vizualisations of COVID cases, deaths and COVID-related pageviews
 <ul align="justify">
-    <li>Mapping 
+    <li>Plotings of evolutions of cases, deaths and pageviews.
+    </li>
+    <li>Creation of interactive maps of COVID cases, of COVID death and of COVID-related articles pageviews.
+    </li>
+    <li>Using differences in differences analysis to numerically compare the data. And comparing the evolutions to the pre-covid baseline.
     </li>
 </ul>
 
 ### 3. Identification of interessting countries to analyze
 <ul align="justify">
-    <li>
+    <li>Pearson correlation of COVID cases and COVID-related articles pageviews, and COVID deaths and COVID-related articles pageviews.
+    </li>
+    <li>Use unsupervised clutesting methods to indentify countries in which populations were highly interested in information regarding COVID-19, and infentifying countries in which the correlation was similar (highly positive, negative or no correlation). From there, we will pick a representative sample of 3 to 5 countries to analyzse in more depth.
     </li>
 </ul>
 
 ### 4. Investigation of mobility and trust in select countries
 <ul align="justify">
-    <li>
+    <li>Question the mobility_df to identify links between information seeking behavior and mobility during the covid period. We seek to answer the question : Do countries in which the population was more interested in COVID have earlier, longer and stricter lockdowns? Do interested populations restrict their mobility more? Using pearson correlation and visual plots.
+    </li>
+    <li>Investigate the trust_df to identify links between information seeking behavior and trust of the population towards their government or the scientific community.
     </li>
 </ul>
 
 ### 5. Site building and Datastory
-<ul align="justify">
-    <li>
-    </li>
-</ul>
+
 
 ## Timeline
 Internal Milestones V1:
