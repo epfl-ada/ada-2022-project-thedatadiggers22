@@ -2,32 +2,47 @@
 
 ## Abstract 
 <p align="justify">
-It is reasonable to assume that Wikipedia searches reflect interest as users must actively want to know more about a subject to search it on Wikipedia. Using this hypothesis, we seek to assess the “digital” propagation of the COVID-19 pandemic by looking at the pageview statistics of COVID-related pages across different languages and comparing this to the geographical propagation of the virus. We can thus link the “mental” and physical presence of the virus across countries and analyse how it impacted measures taken by the governments and the mobility of the populations.  Are there patterns? Does mental presence link to a better handling of the pandemic? In a second stage, we will make an in-depth analysis of a select few countries an <strong>[to finish]</strong>. 
+It is reasonable to assume that Wikipedia searches reflect interest as users must actively want to know more about a subject to search it on Wikipedia. Using this hypothesis, we seek to assess the “digital” propagation of the COVID-19 pandemic by looking at the pageview statistics of COVID-related pages across different languages and comparing this to the geographical propagation of the virus. We can thus link the “mental” and physical presence of the virus across countries and analyse how it impacted measures taken by the governments and the mobility of the populations.  Did populations that were strongly interested in COVID-19 restrict their mobility more? In a second stage, we are going to do an in-depth analysis of a select few countries and compare the populations interest and mobility to their trust of their government. Do interested populations have more trust their government and science? 
 </p>
 
 ## Research quesions
 
 1. How did the physical propagation of the COVID-19 pandemic affect the interest of people about COVID-19 measured using Wikipedia pageviews of articles related to COVID-19?
-2. Did the different lockdowns and modified mobility impacted the interest of populations toward COVID-19?
-3. Did trust towards politics of the country have an impact on the evolution of the number of cases/deaths and the mobility? Does people less confident about their politics will look more or less to covid pages?
+2. Did the different lockdowns and modified mobility impact the interest of populations toward COVID-19? 
+3. Will people that are more, or less confident about their politics look more, or less at COVID-related wikipedia pages? Does this reflect in their mobility during lockdowns ?
 
 ## Datasets
+1. Full CoronaWiki pageviews. Provided by Shay Nowick, Sr. Data Scientist at Wikimedia Foundation. This dataset contains the pageviews for all COVID-related articles in 175 languages. The COVID-related articles were identified using the pagelinks to the articles "COVID-19" or "COVID-19 Pandemic". Before receiving the dataset, we started building the pipeline to fetch all information from Wikipedia. See the incomplete pipeline in **FILE NAME HERE**. 
+    - Languages with less than 10 articles removed at first : 60 remaining languages.
+    - Languages that are not specific to a country (ex. english, spanish) removed in a second phase : **À compléter** remaining languages.
+2. [Google Mobility](https://www.google.com/covid19/mobility/). This dataset contains a mobility score for every country categorized by 6 different places. We will extract the data for our countries of interest
+3. [Population Trust](https://ourworldindata.org/trust)**à compléter**
+4. [COVID-19 Dataset](https://ourworldindata.org/explorers/coronavirus-data-explorer). This dataset contains all informaiton
 ## Methods
 ## Timeline
 ## Organisation
-<p align="justify">
-We are using ZenHub to create and track our issues effectively. As this project is about continous exploration, we'll be using the Kanban methodology. We'll discuss, prioritize, distribute and reassess the issues during our weekly meetings.
-</p>
-
-
 Internal Milestones V1:
 1. Week 8 : Milestone 2 deadline
 2. Weeks 9 & 10 : Homework 2
 3. Week 11 : Full wrangling pipeline & mappings of the propagation, begin analysis and deep-dive
 4. Week 12 : Macro-analysis of countries done, deep-dive into select countries
 5. Week 13 : Deep-dive finised, begin to create website and write datastory
-6. Week 14 : Cleaning, writing and submission of project
+6. Week 14 : Cleaning of code, proofread writing and submission of project
 
 ## Organisation within the team
+<p align="justify">
+We are using ZenHub to create and track our issues effectively. As this project is about continous exploration, we'll be using the Kanban methodology. We'll discuss, prioritize, distribute and reassess the issues during our weekly meetings.
+Team members will be free to participate in all different tasks depending on priority of said tasks. General distribution is as follows, but is not final nor exclusive:
+<ol>
+  <li>Data piplelines and data wrangling: Robin & Carl</li>
+  <li>Data visualization and analysis methods: Arthur & Charlotte</li>
+  <li>Data analysis: all</li>
+  <li>Trust dataset : Charlotte</li>
+  <li>README: Carl</li>
+  <li>Building site: Robin & Carl</li>
+  <li>Final redaction: all</li>
+</ol>
+<strong>Commentaire : ajoutez-vous où vous voulez</strong>
+</p>
 
 ## Question for the TA
