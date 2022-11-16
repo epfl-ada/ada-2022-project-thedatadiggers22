@@ -12,7 +12,7 @@ It is reasonable to assume that Wikipedia searches reflect interest as users mus
 3. Will people that are more, or less confident about their politics look more, or less at COVID-related Wikipedia pages? Does this reflect in their mobility during lockdowns ?
 
 ## Datasets
-<p>
+<p align="justify">
 <ol>
 <li><strong>Full CoronaWiki article list</strong>. Provided by Shay Nowick, Sr. Data Scientist at Wikimedia Foundation. This dataset contains all COVID-related article titles in 175 languages. The COVID-related articles were identified using the pagelinks to the articles "COVID-19" or "COVID-19 Pandemic". Before receiving the dataset, we started building a script to scrape all the information from Wikipedia. See the incomplete pipeline in <strong> FILE NAME HERE </strong>.
 <ol>
