@@ -14,7 +14,8 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
 
 ## Datasets
 <ol align="justify">
-    <li><strong>Full CoronaWiki article list</strong>. We plan to analyze more countries that the dataset provided in the ADA course. Shay Nowick, Sr. Data Scientist at Wikimedia Foundation, provided us the full dataset: it contains all COVID-related article titles in 175 languages. The COVID-related articles were identified using the pagelinks to the articles "COVID-19" or "COVID-19 Pandemic". Before receiving the dataset, we started building a script to scrape all the information from Wikipedia. See the incomplete pipeline in <strong> FILE NAME HERE </strong>.
+    <li><strong>Full CoronaWiki article list</strong>. We plan to analyze more countries that the dataset provided in the ADA course. Shay Nowick, Sr. Data Scientist at Wikimedia Foundation, provided us the full dataset: it contains all COVID-related article titles in 175 languages. The COVID-related articles were identified using the pagelinks to the articles "COVID-19" or "COVID-19 Pandemic". Before receiving the dataset, we started building a script to scrape all the information from Wikipedia. See the incomplete pipeline in <strong> FILE NAME HERE </strong>. 
+    We also considered depreciated articles that redirect to COVID-related articles that were not present in the initial list because the data using the original dataset was underestimating the number of page views by a factor 10 at most (see in JupyterNoteBook the study case of the french language).
     <ul align="justify">
         <li>Languages with less than 10 articles are removed: 60 remaining languages.</li>
         <li>Languages that are not specific to a country (ex. English, Spanish) are removed in a second phase: <strong>À compléter</strong> remaining languages.</li>
@@ -28,7 +29,11 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
 ## Methods
 ### 1. Data scraping, pre-processing and dataframes creation
 <ul align="justify">
-    <li>Dataset pageview_df: we used the dataset of all COVID-related article titles in 175 languages to scrape the pageview statistics using the REST API provided by Wikipedia. 
+    <li>Dataset pageview_df: we used the dataset of all COVID-related article titles in 175 languages to scrape the pageview statistics using the REST API provided by Wikipedia.   When exploring our original dataset and the list above, we saw that some important articles were not considered. Indeed, articles no longer used at the time of the original analysis were not considered because these articles only redirected on other covid related pages and have no content anymore. However at the beginning of the pandemic, these articles linked to Covid-19 main pages and were viewed a lot. Using Topviews Analysis tool of wikidata(https://pageviews.wmcloud.org/topviews/?project=fr.wikipedia.org&platform=all-access&date=2020-03-31&excludes=) we found for example that for the french language the following 12 pages are obviously related to covid but not all of them are present in the list of covid articles because most of them have been depreciated and now redirect to other pages. For example, Pandémie de maladie à coronavirus de 2020 en France redirect to Pandémie de COVID-19 en France. Thus, not considering this pages can lead to a biased analysis of the interest for Covid-19 as it can be well under-estimated.
+
+    ![title](picture_fr_pageviews-31-03-2020.png)
+    ![title](redirect_example.png)
+    
     <ul>
         <li>All languages that had less than 10 articles were discarded for being unsignificant.
         </li>
