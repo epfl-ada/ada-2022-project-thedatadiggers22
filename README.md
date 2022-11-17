@@ -31,8 +31,8 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
 <ul align="justify">
     <li>Dataset pageview_df: we used the dataset of all COVID-related article titles in 175 languages to scrape the pageview statistics using the REST API provided by Wikipedia.   When exploring our original dataset and the list above, we saw that some important articles were not considered. Indeed, articles no longer used at the time of the original analysis were not considered because these articles only redirected on other covid related pages and have no content anymore. However at the beginning of the pandemic, these articles linked to Covid-19 main pages and were viewed a lot. Using Topviews Analysis tool of wikidata(https://pageviews.wmcloud.org/topviews/?project=fr.wikipedia.org&platform=all-access&date=2020-03-31&excludes=) we found for example that for the french language the following 12 pages are obviously related to covid but not all of them are present in the list of covid articles because most of them have been depreciated and now redirect to other pages. For example, Pandémie de maladie à coronavirus de 2020 en France redirect to Pandémie de COVID-19 en France. Thus, not considering this pages can lead to a biased analysis of the interest for Covid-19 as it can be well under-estimated.
     </li>
-[![picture-fr-pageviews-31-03-2020.png](https://i.postimg.cc/2y7fJWtP/picture-fr-pageviews-31-03-2020.png)](https://postimg.cc/0Kj3KzPf)
-[![redirect-example.png](https://i.postimg.cc/ZY8ZCkqV/redirect-example.png)](https://postimg.cc/s1gbNN7h)
+![picture-fr-pageviews-31-03-2020.png](https://i.postimg.cc/2y7fJWtP/picture-fr-pageviews-31-03-2020.png)](https://postimg.cc/0Kj3KzPf)
+![redirect-example.png](https://i.postimg.cc/ZY8ZCkqV/redirect-example.png)](https://postimg.cc/s1gbNN7h)
     <ul>
         <li>All languages that had less than 10 articles were discarded for being unsignificant.
         </li>
