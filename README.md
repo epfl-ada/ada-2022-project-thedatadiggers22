@@ -36,7 +36,7 @@ Also :
 ## Methods
 ### 1. Data scraping, pre-processing and dataframes creation
 <ul align="justify">
-    <li>Dataset pageview_df: Dataset containing the pageview statistics for all COVID-related pages in about 60 languages after pre-processing. We used the dataset of all COVID-related article titles in 175 languages to scrape the pageview statistics using the REST API provided by Wikipedia. 
+    <li>Dataset pageview_df: Dataset containing the pageview statistics for all COVID-related pages in about 60 languages after pre-processing.
     </li>
     </li> 
     <li>Dataset mobility_df: Google mobility dataset from different countries. We again did not use the dataset provided in the course but downloaded an enriched version directly from Google to include more countries.
@@ -53,8 +53,6 @@ Also :
     <li>Plots of evolutions of cases, deaths and pageviews.
     </li>
     <li>Creation of interactive maps of COVID cases, of COVID death and of COVID-related articles pageviews.
-    </li>
-    <li>Using differences in differences analysis to numerically compare the data. And comparing the evolutions to the pre-covid baseline.
     </li>
 </ul>
 
