@@ -27,7 +27,7 @@ Also :
         <li>Languages with less than 10 articles are removed. Languages that are not specific to a country (ex. English, Spanish) will be removed in a second             phase.</li>
         <li>We will  use the articles titles of this dataset to download all pageviews statistics using the Wikipedia REST API and thus create the dataset needed to answer our research questions.</li>
     </ul></li>
-    <li><a href="https://www.google.com/covid19/mobility/"><strong>Google Mobility</strong></a>: Provided in the scope of the ADA course, this dataset contains a mobility score for every country categorized by 6 different places. We will extract the data for our countries of interests in which we seek to analyze the mobility behavior.</li>
+    <li><a href="https://www.google.com/covid19/mobility/"><strong>Google Mobility</strong></a>: Initially provided in the scope of the ADA course, this dataset contains a mobility score for every country categorized by 6 different places. We again did not use the dataset provided in the course but downloaded an enriched version directly from Google to include more countries.</li>
     <li><a href="https://ourworldindata.org/trust"><strong>Population Trust</strong></a>: We use this additional dataset which contains results of attitudial surveys for what share of people trust their government, journalists and science. We will focus on the countries analysed in this project and use this information to compare the differences in covid pageviews trends between these countries. 
     <li><a href="https://ourworldindata.org/explorers/coronavirus-data-explorer"><strong>COVID-19 Dataset</strong></a>: This dataset contains all information relative to the COVID-19 pandemic in the form of a timeseries per country. We will only use the cases per country and the deaths per country.</li>
 </ol>
@@ -38,7 +38,7 @@ Also :
     <li>Dataset pageview_df: Dataset containing the pageview statistics for all COVID-related pages in about 60 languages after pre-processing.
     </li>
     </li> 
-    <li>Dataset mobility_df: Google mobility dataset from different countries. We again did not use the dataset provided in the course but downloaded an enriched version directly from Google to include more countries.
+    <li>Dataset mobility_df: Google mobility dataset from different countries. We will extract the data for our countries of interests in which we seek to analyze          the mobility behavior.
     </li>
     <li>Dataset trust_df: <strong>à compléter</strong>
     </li>
@@ -65,9 +65,9 @@ Also :
 
 ### 4. Investigation of mobility and trust in select countries
 <ul align="justify">
-    <li>Question the mobility_df to identify links between information seeking behavior and mobility during the covid period. We seek to answer the question: Do countries in which the population was more interested in COVID have earlier, longer and stricter lockdowns? Do interested populations restrict their mobility more? Using pearson correlation and visual plots.
+    <li>Question the mobility_df to identify links between information seeking behavior and mobility during the covid period. To do so, we will perform a detailled timeseries analysis: checking for seasonality, Dicker-fuller test, correlation.
     </li>
-    <li>Investigate the trust_df to identify links between information seeking behavior and trust of the population towards their government or the scientific community.
+    <li>Investigate the trust_df to identify links between information seeking behavior and trust of the population towards their government or the scientific community with the same methods. 
     </li>
 </ul>
 
