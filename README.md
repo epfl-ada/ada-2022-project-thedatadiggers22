@@ -19,7 +19,7 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
     </li>
     <p float = "left">
     <img src="https://i.postimg.cc/2y7fJWtP/picture-fr-pageviews-31-03-2020.png" data-canonical-src="picture-fr-pageviews-31-03-2020.png" width="508" height="374"/>
-    <img src="https://i.postimg.cc/ZY8ZCkqV/redirect-example.png" data-canonical-src="https://postimg.cc/0Kj3KzPf" width="320" height="90"/>
+    <img src="https://i.postimg.cc/ZY8ZCkqV/redirect-example.png" data-canonical-src="https://postimg.cc/0Kj3KzPf" width="480" height="135"/>
     </p>
 
     
