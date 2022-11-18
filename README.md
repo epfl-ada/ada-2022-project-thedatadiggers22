@@ -41,7 +41,7 @@ Also :
     </li> 
     <li>Dataset mobility_df: Google mobility dataset from different countries. We will extract the data for our countries of interests in which we seek to analyze          the mobility behavior.
     </li>
-    <li>Dataset trust_df: <strong>à compléter</strong>
+    <li>Dataset trust_df: Percentage of the population per country that trust politics, journalits and science.
     </li>
     <li>Dataset covid_df: dataset with COVID cases and deaths per country.
     </li>
@@ -98,7 +98,6 @@ Team members will be free to participate in all different tasks depending on pri
   <li>Building site: Robin & Carl,</li>
   <li>Final redaction: All.</li>
 </ol>
-<strong>Commentaire : ajoutez-vous où vous voulez</strong>
 </p>
 
 ## Question for the TA
