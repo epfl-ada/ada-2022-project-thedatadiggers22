@@ -18,8 +18,8 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
     Unlike the data provided in the course, we also consider depreciated articles that now redirect to new COVID-related articles. Ideed the original dataset was underestimating the number of page views by a factor of up to 10. Case sturdy for french language (see in data_pipeline): the following 12 pages are obviously related to covid but not all of them are present in the list of covid articles because they are depreciated and now redirect to other pages. For example, "Pandémie de maladie à coronavirus de 2020" en France redirects to "Pandémie de COVID-19 en France". Not considering these pages can lead to a biased analysis of the interest for Covid-19.
     </li>
     <p float = "left">
-    <img src="https://i.postimg.cc/2y7fJWtP/picture-fr-pageviews-31-03-2020.png" data-canonical-src="picture-fr-pageviews-31-03-2020.png" width="500" height="374"/>
-    <img src="https://i.postimg.cc/ZY8ZCkqV/redirect-example.png" data-canonical-src="https://postimg.cc/0Kj3KzPf" width="480" height="135"/>
+    <img src="https://i.postimg.cc/2y7fJWtP/picture-fr-pageviews-31-03-2020.png" data-canonical-src="picture-fr-pageviews-31-03-2020.png" width="450" height="374"/>
+    <img src="https://i.postimg.cc/ZY8ZCkqV/redirect-example.png" data-canonical-src="https://postimg.cc/0Kj3KzPf" width="450" height="135"/>
     </p>
 
     
