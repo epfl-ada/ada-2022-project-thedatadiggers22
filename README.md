@@ -34,6 +34,10 @@ Also :
 </ol>
 
 ## Methods
+<ol>
+<li>data_pipeline.ipynb contains investigation about original data and function used to generated the new dataset pageview_df.</li>
+</ol>
+
 ### 1. Data scraping, pre-processing and dataframes creation
 <ul align="justify">
     <li>Dataset pageview_df: Dataset containing the pageview statistics for all COVID-related pages in about 60 languages after pre-processing. A weekly seasonal pattern can be found in the pageviews of every languages. We will investigate in more detail the cause of this seasonality and remove it if it is due to artifical handling of log by wikipedia (log without date are assigned specific date each week). 
