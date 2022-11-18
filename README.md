@@ -24,7 +24,7 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
   
 Also :
     <ul align="justify">
-        <li>Languages with less than 10 articles are removed. Also Languages that are not specific to a country (ex. English, Spanish) will be removed in a second             phase.</li>
+        <li>Languages with less than 10 articles are removed. Languages that are not specific to a country (ex. English, Spanish) will be removed in a second             phase.</li>
         <li>We will  use the articles titles of this dataset to download all pageviews statistics using the Wikipedia REST API and thus create the dataset needed to answer our research questions.</li>
     </ul></li>
     <li><a href="https://www.google.com/covid19/mobility/"><strong>Google Mobility</strong></a>: Provided in the scope of the ADA course, this dataset contains a mobility score for every country categorized by 6 different places. We will extract the data for our countries of interests in which we seek to analyze the mobility behavior.</li>
