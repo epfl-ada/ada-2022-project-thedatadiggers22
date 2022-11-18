@@ -14,12 +14,18 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
 
 ## Datasets
 <ol align="justify">
-    <li><strong>Full CoronaWiki article list</strong>. We plan to analyze more countries that the dataset provided in the ADA course. Shay Nowick, Sr. Data Scientist at Wikimedia Foundation, provided us the full dataset: it contains all COVID-related article titles in 175 languages. The COVID-related articles were identified using the pagelinks to the articles "COVID-19" or "COVID-19 Pandemic". Before receiving the dataset, we started building a script to scrape all the information from Wikipedia. See the incomplete pipeline in <strong> FILE NAME HERE </strong>. 
-    We also considered depreciated articles that redirect to COVID-related articles that were not present in the initial list because the data using the original dataset was underestimating the number of page views by a factor 10 at most (see in JupyterNoteBook the study case of the french language).
+    <li><strong>Full CoronaWiki article list</strong>. We plan to analyze more countries that the dataset provided in the ADA course. Shay Nowick, Sr. Data Scientist at Wikimedia Foundation, provided us the full dataset: it contains all COVID-related article titles in 175 languages. The COVID-related articles were identified using the pagelinks to the articles "COVID-19" or "COVID-19 Pandemic". Before receiving the dataset, we started building a script to scrape all the information from Wikipedia. See the incomplete pipeline in "data_pipeline.ipynb". 
+    Unlike the data provided in the course, we also consider depreciated articles that now redirect to new COVID-related articles. Ideed the original dataset was underestimating the number of page views by a factor of up to 10. Case sturdy for french language (see in data_pipeline): the following 12 pages are obviously related to covid but not all of them are present in the list of covid articles because they are depreciated and now redirect to other pages. For example, "Pandémie de maladie à coronavirus de 2020" en France redirects to "Pandémie de COVID-19 en France". Not considering these pages can lead to a biased analysis of the interest for Covid-19.
+    </li>
+
+[![picture-fr-pageviews-31-03-2020.png](https://i.postimg.cc/2y7fJWtP/picture-fr-pageviews-31-03-2020.png)](https://postimg.cc/0Kj3KzPf)
+
+[![redirect-example.png](https://i.postimg.cc/ZY8ZCkqV/redirect-example.png)](https://postimg.cc/s1gbNN7h)
+    Also :
     <ul align="justify">
-        <li>Languages with less than 10 articles are removed: 60 remaining languages.</li>
-        <li>Languages that are not specific to a country (ex. English, Spanish) are removed in a second phase: <strong>À compléter</strong> remaining languages.</li>
-        <li>We will then use the articles titles of this dataset to download all pageviews statistics using the Wikipedia REST API and thus create the dataset needed to answer our research questions.</li>
+        <li>Languages with less than 10 articles are removed.</li>
+        <li>Languages that are not specific to a country (ex. English, Spanish) are removed in a second phase.
+        <li>We will  use the articles titles of this dataset to download all pageviews statistics using the Wikipedia REST API and thus create the dataset needed to answer our research questions.</li>
     </ul></li>
     <li><a href="https://www.google.com/covid19/mobility/"><strong>Google Mobility</strong></a>: Provided in the scope of the ADA course, this dataset contains a mobility score for every country categorized by 6 different places. We will extract the data for our countries of interests in which we seek to analyze the mobility behavior.</li>
     <li><a href="https://ourworldindata.org/trust"><strong>Population Trust</strong></a>: We use this additional dataset which contains results of attitudial surveys for what share of people trust their government, journalists and science. We will focus on the countries analysed in this project and use this information to compare the differences in covid pageviews trends between these countries. 
@@ -29,20 +35,8 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
 ## Methods
 ### 1. Data scraping, pre-processing and dataframes creation
 <ul align="justify">
-    <li>Dataset pageview_df: we used the dataset of all COVID-related article titles in 175 languages to scrape the pageview statistics using the REST API provided by Wikipedia. When exploring our original dataset and the list above, we saw that some important articles were not considered. Indeed, articles no longer used at the time of the original analysis were not considered because these articles only redirected on other covid related pages and have no content anymore. However at the beginning of the pandemic, these articles linked to Covid-19 main pages and were viewed a lot. Using Topviews Analysis tool of wikidata (https://pageviews.wmcloud.org/topviews/?project=fr.wikipedia.org&platform=all-access&date=2020-03-31&excludes=) we found for example that for the french language the following 12 pages are obviously related to covid but not all of them are present in the list of covid articles because most of them have been depreciated and now redirect to other pages. For example, Pandémie de maladie à coronavirus de 2020 en France redirect to Pandémie de COVID-19 en France. Thus, not considering this pages can lead to a biased analysis of the interest for Covid-19 as it can be well under-estimated.
+    <li>Dataset pageview_df: Dataset containing the pageview statistics for all COVID-related pages in <strong>XXX</strong> languages. We used the dataset of all COVID-related article titles in 175 languages to scrape the pageview statistics using the REST API provided by Wikipedia. 
     </li>
-
-[![picture-fr-pageviews-31-03-2020.png](https://i.postimg.cc/2y7fJWtP/picture-fr-pageviews-31-03-2020.png)](https://postimg.cc/0Kj3KzPf)
-
-[![redirect-example.png](https://i.postimg.cc/ZY8ZCkqV/redirect-example.png)](https://postimg.cc/s1gbNN7h)
-    <ul>
-        <li>In addition, only languages that were associated with a geographical country were kept (ex. Swedish).
-        </li>
-        <li>We aggregated pageviews per language for our final DataFrame used in further analysis.
-        </li>
-        <li>Before the Wikimedia Foundation provided us the COVID-related article titles dataset, we set up our own script to scrape all COVID-19 related titles. See <strong>file_name</strong> for incomplete script.
-        </li>
-    </ul>
     </li> 
     <li>Dataset mobility_df: Google mobility dataset from different countries. We again did not use the dataset provided in the course but downloaded an enriched version directly from Google to include more countries.
     </li>
