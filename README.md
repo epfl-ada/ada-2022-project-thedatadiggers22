@@ -15,8 +15,8 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
 ## Datasets
 <ol align="justify">
     <li><strong>Full CoronaWiki article list</strong>. We plan to analyze more countries that the dataset provided in the ADA course. Shay Nowick, Sr. Data Scientist at Wikimedia Foundation, provided us the full dataset: it contains all COVID-related article titles in 175 languages. The COVID-related articles were identified using the pagelinks to the articles "COVID-19" or "COVID-19 Pandemic". Before receiving the dataset, we started building a script to scrape all the information from Wikipedia. See the incomplete pipeline in "data_pipeline.ipynb". 
-    Unlike the data provided in the course, we also consider depreciated articles that now redirect to new COVID-related articles. Ideed the original dataset was underestimating the number of page views by a factor of up to 10. Case sturdy for french language (see in data_pipeline): the following 12 pages are obviously related to covid but not all of them are present in the list of covid articles because they are depreciated and now redirect to other pages. For example, "Pandémie de maladie à coronavirus de 2020" en France redirects to "Pandémie de COVID-19 en France". Not considering these pages can lead to a biased analysis of the interest for Covid-19.
-    </li>
+    Unlike the data provided in the course, we also consider depreciated articles that now redirect to new COVID-related articles. Indeed the original dataset was underestimating the number of page views by a factor of up to 10. Case study for french language (see in data_pipeline): the following 12 pages are obviously related to covid but not all of them are present in the list of covid articles because they are depreciated and now redirect to other pages. For example, "Pandémie de maladie à coronavirus de 2020" en France redirects to "Pandémie de COVID-19 en France". Not considering these pages and the views they generated can lead to a biased analysis of the interest for Covid-19.
+    </li>  
     <p align = "center">
     <img src="https://i.postimg.cc/2y7fJWtP/picture-fr-pageviews-31-03-2020.png" data-canonical-src="picture-fr-pageviews-31-03-2020.png" width="450" height="331"/>
     <img src="https://i.postimg.cc/ZY8ZCkqV/redirect-example.png" data-canonical-src="https://postimg.cc/0Kj3KzPf" width="450" height="135"/>
@@ -24,11 +24,10 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
   
 Also :
     <ul align="justify">
-        <li>Languages with less than 10 articles are removed.</li>
-        <li>Languages that are not specific to a country (ex. English, Spanish) are removed in a second phase.
+        <li>Languages with less than 10 articles are removed. Languages that are not specific to a country (ex. English, Spanish) will be removed in a second             phase.</li>
         <li>We will  use the articles titles of this dataset to download all pageviews statistics using the Wikipedia REST API and thus create the dataset needed to answer our research questions.</li>
     </ul></li>
-    <li><a href="https://www.google.com/covid19/mobility/"><strong>Google Mobility</strong></a>: Provided in the scope of the ADA course, this dataset contains a mobility score for every country categorized by 6 different places. We will extract the data for our countries of interests in which we seek to analyze the mobility behavior.</li>
+    <li><a href="https://www.google.com/covid19/mobility/"><strong>Google Mobility</strong></a>: Initially provided in the scope of the ADA course, this dataset contains a mobility score for every country categorized by 6 different places. We again did not use the dataset provided in the course but downloaded an enriched version directly from Google to include more countries.</li>
     <li><a href="https://ourworldindata.org/trust"><strong>Population Trust</strong></a>: We use this additional dataset which contains results of attitudial surveys for what share of people trust their government, journalists and science. We will focus on the countries analysed in this project and use this information to compare the differences in covid pageviews trends between these countries. 
     <li><a href="https://ourworldindata.org/explorers/coronavirus-data-explorer"><strong>COVID-19 Dataset</strong></a>: This dataset contains all information relative to the COVID-19 pandemic in the form of a timeseries per country. We will only use the cases per country and the deaths per country.</li>
 </ol>
@@ -36,10 +35,10 @@ Also :
 ## Methods
 ### 1. Data scraping, pre-processing and dataframes creation
 <ul align="justify">
-    <li>Dataset pageview_df: Dataset containing the pageview statistics for all COVID-related pages in <strong>XXX</strong> languages. We used the dataset of all COVID-related article titles in 175 languages to scrape the pageview statistics using the REST API provided by Wikipedia. 
+    <li>Dataset pageview_df: Dataset containing the pageview statistics for all COVID-related pages in about 60 languages after pre-processing.
     </li>
     </li> 
-    <li>Dataset mobility_df: Google mobility dataset from different countries. We again did not use the dataset provided in the course but downloaded an enriched version directly from Google to include more countries.
+    <li>Dataset mobility_df: Google mobility dataset from different countries. We will extract the data for our countries of interests in which we seek to analyze          the mobility behavior.
     </li>
     <li>Dataset trust_df: <strong>à compléter</strong>
     </li>
@@ -54,8 +53,6 @@ Also :
     </li>
     <li>Creation of interactive maps of COVID cases, of COVID death and of COVID-related articles pageviews.
     </li>
-    <li>Using differences in differences analysis to numerically compare the data. And comparing the evolutions to the pre-covid baseline.
-    </li>
 </ul>
 
 ### 3. Identification of interesting countries to analyze
@@ -68,9 +65,9 @@ Also :
 
 ### 4. Investigation of mobility and trust in select countries
 <ul align="justify">
-    <li>Question the mobility_df to identify links between information seeking behavior and mobility during the covid period. We seek to answer the question: Do countries in which the population was more interested in COVID have earlier, longer and stricter lockdowns? Do interested populations restrict their mobility more? Using pearson correlation and visual plots.
+    <li>Question the mobility_df to identify links between information seeking behavior and mobility during the covid period. To do so, we will perform a detailled timeseries analysis: checking for seasonality, Dicker-fuller test, correlation.
     </li>
-    <li>Investigate the trust_df to identify links between information seeking behavior and trust of the population towards their government or the scientific community.
+    <li>Investigate the trust_df to identify links between information seeking behavior and trust of the population towards their government or the scientific community with the same methods. 
     </li>
 </ul>
 
@@ -79,12 +76,11 @@ Also :
 
 ## Timeline
 Internal Milestones V1:
-1. Week 8 : Milestone 2 deadline: scraping and data wrangling pipelines
-2. Weeks 9 & 10 : Homework 2,
-3. Week 11 : Mappings of the propagation done, begin analysis and deep-dive,
-4. Week 12 : Macro-analysis of countries done, deep-dive into select countries,
-5. Week 13 : Deep-dive finished, begin to create website and write datastory,
-6. Week 14 : Cleaning of code, proofread of writing and submission of project.
+1. Week 9 : Milestone 2 deadline: scraping and data wrangling pipelines
+2. Weeks 10 & 11 : Homework 2,
+3. Week 12 : Mappings of the propagation done, begin analysis and deep-dive,
+4. Week 13 : Deep-dive finished, begin to create website and write datastory,
+5. Week 14 : Cleaning of code, proofread of writing and submission of project.
 
 ## Organisation within the team
 <p align="justify">
