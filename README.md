@@ -41,7 +41,7 @@ Also :
     </li> 
     <li>Dataset mobility_df: Google mobility dataset from different countries. We will extract the data for our countries of interests in which we seek to analyze          the mobility behavior.
     </li>
-    <li>Dataset trust_df: Percentage of the population per country that trust politics, journalits and science.
+    <li>Dataset trust_df: Percentage of the population per country that trust politics, journalists and science.
     </li>
     <li>Dataset covid_df: dataset with COVID cases and deaths per country.
     </li>
