@@ -21,11 +21,7 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
     <img src="https://i.postimg.cc/2y7fJWtP/picture-fr-pageviews-31-03-2020.png" data-canonical-src="picture-fr-pageviews-31-03-2020.png" width="450" height="331"/>
     <img src="https://i.postimg.cc/ZY8ZCkqV/redirect-example.png" data-canonical-src="https://postimg.cc/0Kj3KzPf" width="450" height="135"/>
     </p>
-
-    
- [![picture-fr-pageviews-31-03-2020.png](https://i.postimg.cc/2y7fJWtP/picture-fr-pageviews-31-03-2020.png)](https://postimg.cc/0Kj3KzPf)
-[![redirect-example.png](https://i.postimg.cc/ZY8ZCkqV/redirect-example.png)](https://postimg.cc/s1gbNN7h)
- 
+  
 Also :
     <ul align="justify">
         <li>Languages with less than 10 articles are removed.</li>
