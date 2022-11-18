@@ -39,10 +39,6 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
     <img src="picture-fr-pageviews-31-03-2020.png" width="200"/>
     </li>
 
-[![picture-fr-pageviews-31-03-2020.png](https://i.postimg.cc/2y7fJWtP/picture-fr-pageviews-31-03-2020.png)](https://postimg.cc/0Kj3KzPf)
-
-[![redirect-example.png](https://i.postimg.cc/ZY8ZCkqV/redirect-example.png)](https://postimg.cc/s1gbNN7h)
-    </li> 
     <li>Dataset mobility_df: Google mobility dataset from different countries. We again did not use the dataset provided in the course but downloaded an enriched version directly from Google to include more countries.
     </li>
     <li>Dataset trust_df: <strong>à compléter</strong>
