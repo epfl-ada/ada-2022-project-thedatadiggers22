@@ -53,6 +53,8 @@ Also :
     </li>
     <li>Creation of interactive maps of COVID cases, of COVID death and of COVID-related articles pageviews.
     </li>
+    <li>Time series analysis for all countries.
+    </li>
 </ul>
 
 ### 3. Identification of interesting countries to analyze
