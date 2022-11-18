@@ -9,7 +9,7 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
 <ol align="justify">
     <li>How did the physical propagation of the COVID-19 pandemic affect the interest of people about COVID-19, measured using Wikipedia pageviews of articles related to COVID-19?</li>
     <li>Did the interest of populations toward COVID-19 impact the measures taken by governments and does it reflect in the mobility?</li>
-    <li>Will people that are more or less confident about their politics look more, or less at COVID-related Wikipedia pages? Does this reflect in their mobility during lockdowns?</li>
+    <li>Will people that are more or less confident about their politics, journalist or about science look more, or less at COVID-related Wikipedia pages? Does this reflect in their mobility during lockdowns?</li>
 </ol>
 
 ## Datasets
