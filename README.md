@@ -105,4 +105,6 @@ Team members will be free to participate in all different tasks depending on pri
 <ul align="justify">
     <li>How can we ensure that the weekly seasonality in the page views dataset are due to the way wikipedia handle edge cases in its logs?
     </li>
+    <li>Does Granger causality test could be interesting to compare the time series of covid wikipedia pageviews and covid cases/deaths even if the series aren't stationary?
+    </li>
 </ul>
