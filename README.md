@@ -17,8 +17,8 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
     <li><strong>Full CoronaWiki article list</strong>. We plan to analyze more countries that the dataset provided in the ADA course. Shay Nowick, Sr. Data Scientist at Wikimedia Foundation, provided us the full dataset: it contains all COVID-related article titles in 175 languages. The COVID-related articles were identified using the pagelinks to the articles "COVID-19" or "COVID-19 Pandemic". Before receiving the dataset, we started building a script to scrape all the information from Wikipedia. See the incomplete pipeline in "data_pipeline.ipynb". 
     Unlike the data provided in the course, we also consider depreciated articles that now redirect to new COVID-related articles. Ideed the original dataset was underestimating the number of page views by a factor of up to 10. Case sturdy for french language (see in data_pipeline): the following 12 pages are obviously related to covid but not all of them are present in the list of covid articles because they are depreciated and now redirect to other pages. For example, "Pandémie de maladie à coronavirus de 2020" en France redirects to "Pandémie de COVID-19 en France". Not considering these pages can lead to a biased analysis of the interest for Covid-19.
     </li>
-
-[![picture-fr-pageviews-31-03-2020.png](https://i.postimg.cc/2y7fJWtP/picture-fr-pageviews-31-03-2020.png | width=100)](https://postimg.cc/0Kj3KzPf)
+<img src="https://camo.githubusercontent.com/..." data-canonical-src="picture-fr-pageviews-31-03-2020.png" width="200" height="400" />
+[![picture-fr-pageviews-31-03-2020.png](https://i.postimg.cc/2y7fJWtP/picture-fr-pageviews-31-03-2020.png)](https://postimg.cc/0Kj3KzPf)
 
 [![redirect-example.png](https://i.postimg.cc/ZY8ZCkqV/redirect-example.png)](https://postimg.cc/s1gbNN7h)
     Also :
