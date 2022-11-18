@@ -24,8 +24,9 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
   
 Also :
     <ul align="justify">
-        <li>Languages with less than 10 articles are removed. Languages that are not specific to a country (ex. English, Spanish) will be removed in a second             phase.</li>
+        <li>Languages with less than 10 articles and languages that are not specific to a country (ex. English, Spanish) will be removed in a second phase.</li>
         <li>We will  use the articles titles of this dataset to download all pageviews statistics using the Wikipedia REST API and thus create the dataset needed to answer our research questions.</li>
+        <li>Our analysis will span from 01-01-2020 to 31-07-2022 to get an overview of the entire epidemic.</li>
     </ul></li>
     <li><a href="https://www.google.com/covid19/mobility/"><strong>Google Mobility</strong></a>: Initially provided in the scope of the ADA course, this dataset contains a mobility score for every country categorized by 6 different places. We again did not use the dataset provided in the course but downloaded an enriched version directly from Google to include more countries.</li>
     <li><a href="https://ourworldindata.org/trust"><strong>Population Trust</strong></a>: We use this additional dataset which contains results of attitudial surveys for what share of people trust their government, journalists and science. We will focus on the countries analysed in this project and use this information to compare the differences in covid pageviews trends between these countries. 
@@ -103,6 +104,6 @@ Team members will be free to participate in all different tasks depending on pri
 ## Question for the TA
 
 <ul align="justify">
-    <li>How can we ensure that the weekly seasonality in the page views dataset are due to the ways wikipedia handle edge cases in its logs?
+    <li>How can we ensure that the weekly seasonality in the page views dataset are due to the way wikipedia handle edge cases in its logs?
     </li>
 </ul>
