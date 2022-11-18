@@ -77,11 +77,10 @@ Also :
 ## Timeline
 Internal Milestones V1:
 1. Week 9 : Milestone 2 deadline: scraping and data wrangling pipelines
-2. Weeks 9 & 10 : Homework 2,
-3. Week 11 : Mappings of the propagation done, begin analysis and deep-dive,
-4. Week 12 : Macro-analysis of countries done, deep-dive into select countries,
-5. Week 13 : Deep-dive finished, begin to create website and write datastory,
-6. Week 14 : Cleaning of code, proofread of writing and submission of project.
+2. Weeks 10 & 11 : Homework 2,
+3. Week 12 : Mappings of the propagation done, begin analysis and deep-dive,
+4. Week 13 : Deep-dive finished, begin to create website and write datastory,
+5. Week 14 : Cleaning of code, proofread of writing and submission of project.
 
 ## Organisation within the team
 <p align="justify">
