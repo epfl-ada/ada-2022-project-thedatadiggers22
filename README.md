@@ -35,7 +35,7 @@ Also :
 ## Methods
 ### 1. Data scraping, pre-processing and dataframes creation
 <ul align="justify">
-    <li>Dataset pageview_df: Dataset containing the pageview statistics for all COVID-related pages in about 60 languages after pre-processing.
+    <li>Dataset pageview_df: Dataset containing the pageview statistics for all COVID-related pages in about 60 languages after pre-processing. A weekly seasonal pattern can be found in the pageviews of every languages. We will investigate in more detail the cause of this seasonality and remove it if it is due to artifical handling of log by wikipedia (log without date are assigned specific date each week). 
     </li>
     </li> 
     <li>Dataset mobility_df: Google mobility dataset from different countries. We will extract the data for our countries of interests in which we seek to analyze          the mobility behavior.
@@ -101,3 +101,8 @@ Team members will be free to participate in all different tasks depending on pri
 </p>
 
 ## Question for the TA
+
+<ul align="justify">
+    <li>How can we ensure that the weekly seasonality in the page views dataset are due to the ways wikipedia handle edge cases in its logs?
+    </li>
+</ul>
