@@ -37,7 +37,11 @@ It is reasonable to assume that Wikipedia searches reflect interest, as users mu
 <ul align="justify">
     <li>Dataset pageview_df: Dataset containing the pageview statistics for all COVID-related pages in <strong>XXX</strong> languages. We used the dataset of all COVID-related article titles in 175 languages to scrape the pageview statistics using the REST API provided by Wikipedia. 
     </li>
+<<<<<<< HEAD
     </li> 
+=======
+
+>>>>>>> 9a9d2ed85049d9eb7edc0d6fb93895486676f0b0
     <li>Dataset mobility_df: Google mobility dataset from different countries. We again did not use the dataset provided in the course but downloaded an enriched version directly from Google to include more countries.
     </li>
     <li>Dataset trust_df: <strong>à compléter</strong>
