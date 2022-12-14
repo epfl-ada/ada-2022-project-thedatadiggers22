@@ -16,11 +16,19 @@ COUNTRY_OWN_LANG_TRUST_GOV = {"Italy" : "it", "Russia": "ru", "Albania": "sq",
  "Hungary": "hu", "Japan": "ja", "Kazakhstan": "kk", "South Korea": "ko", "Kyrgyzstan": 'ky', "Netherlands": "nl", "Poland": "pl", 
  "Romania": "ro", "Thailand": "th", "Mongolia": "mn"}
  
-def get_country_dict(country_dict):
-    if country_dict == 'original' :
+COUNTRY_OWN_LANG_TRUST_GOV_MOBILITY= {"Italy" : "it", "Russia": "ru", 
+"Bangladesh": "bn", "Croatia": "hr", "Greece": "el", "Sweden": "sv", "Finland": "fi", "Norway": "no",
+ "Malaysia": "ms", "Israel": "he", "Lithuania": "lt", "Serbia": "sr", "Slovakia": "sk", "Slovenia": "sl", "Turkey": "tr", "Bulgaria": "bg", "Czechia": "cs", "Denmark": "da", "Georgia": "ka", "Germany": "de", 
+ "Hungary": "hu", "Japan": "ja", "Kazakhstan": "kk", "South Korea": "ko", "Kyrgyzstan": 'ky', "Netherlands": "nl", "Poland": "pl", 
+ "Romania": "ro", "Thailand": "th", "Mongolia": "mn"}
+ 
+def get_country_dict(dict):
+    if dict == 'original' :
         return COUNTRY_OWN_LANG
-    elif country_dict == 'trust gov' :
+    elif dict == 'trust gov' :
         return COUNTRY_OWN_LANG_TRUST_GOV
+    elif dict == 'trust gov mobility':
+        return COUNTRY_OWN_LANG_TRUST_GOV_MOBILITY
 
 
 def json_to_df(json_obj, return_df):
