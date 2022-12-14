@@ -12,14 +12,18 @@ COUNTRY_OWN_LANG = {"Italy" : "it", "Russia": "ru", "China": "zh", "Albania": "s
 def get_country_dict():
     return COUNTRY_OWN_LANG
 
-'''
-Function to be used within data fetching script
-Inputs : 
-    - json_obj : dict that was fetched in the given iteration of the script
-    - return_df : final df that will be return at the end of the script
-Output : concatenated df
-'''
+
 def json_to_df(json_obj, return_df):
+    '''
+    Function to be used within data fetching script
+
+    Inputs : 
+
+        - json_obj : dict that was fetched in the given iteration of the script
+        - return_df : final df that will be return at the end of the script
+
+    Output : concatenated df
+    '''
     #Create df from json with nested list
     df = pd.DataFrame()
     if json_obj.get('title') == "Not found.":
@@ -34,15 +38,19 @@ def json_to_df(json_obj, return_df):
     #concatenation
     return  pd.concat([return_df, df])
 
-'''
-Function to get the depreciated articles
-Inputs : 
-    - title: title of the article where pages get redirected
-    - lang: language data to extract
-    - df_articles: list of covid-related article
-Output : list of articles name
-'''
+
 def get_redirect_articles(title, lang, df_articles):
+    '''
+    Function to get the depreciated articles
+
+    Inputs : 
+
+        - title: title of the article where pages get redirected
+        - lang: language data to extract
+        - df_articles: list of covid-related article
+
+    Output : list of articles name
+    '''
     S = requests.Session()
 
     url = "https://{}.wikipedia.org/w/api.php".format(lang)
@@ -73,16 +81,20 @@ def get_redirect_articles(title, lang, df_articles):
     
     return res
 
-'''
-Function to fetch the data using wikimedia api
-Inputs : 
-    - languageCode : language data to extract
-    - begin_date
-    - end_date
-    - df_covid_articles: list of Covid related articles
-Output : concatenated df
-'''
+
 def wiki_to_df_extract(languageCode, begin_date, end_date, df_covid_articles):
+    '''
+    Function to fetch the data using wikimedia api
+
+    Inputs : 
+
+        - languageCode : language data to extract
+        - begin_date
+        - end_date
+        - df_covid_articles: list of Covid related articles
+        
+    Output : concatenated df
+    '''
     #filter language we want to extract
     df_covid_articles_country = df_covid_articles.loc[df_covid_articles.project == "{}.wikipedia".format(languageCode)]['page']
     df_agg_country = pd.DataFrame()
