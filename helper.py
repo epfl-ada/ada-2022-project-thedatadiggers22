@@ -243,16 +243,21 @@ def get_cases_deaths_df(population_df: pd.DataFrame, country_dict: dict, start: 
 
 # Divide trust interval into nbr_category and label the countries
 def trust_category(trust, nbr_category, country_dict):
+    country_dict_ = country_dict.copy()
+    country_dict_cat = {}
     min_trust = float(trust.min(axis=1))
     max_trust = trust.max(axis=1)
     
     delta = float((max_trust-min_trust))/nbr_category
     
-    for j in list(country_dict.keys()):
-        country_trust = float(trust[country_dict[j]])
+    for j in list(country_dict_.keys()):
+        country_trust = float(trust[country_dict_[j]])
         for i in range(nbr_category):
-            print(i)
             if (country_trust >= min_trust + i*delta) & (country_trust < min_trust + (i+1)*delta):
-                country_dict[j] = [country_dict[j], i]
+                country_dict_cat.update({country_dict_[j]:i})
+                country_dict_[j] = [country_dict_[j], i]
             elif (country_trust == (min_trust + (i+1)*delta)) & (i == (nbr_category-1)):
-                country_dict[j] = [country_dict[j], i]
+                country_dict_cat.update({country_dict_[j]:i})
+                country_dict_[j] = [country_dict_[j], i]
+
+    return  country_dict_cat 
