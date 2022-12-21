@@ -272,8 +272,8 @@ def trust_category(trust, nbr_category, country_dict):
 
     return  country_dict_cat 
 
-def format_title(title, subtitle=None, subtitle_font_size=12):
-    title = f'<b>{title}</b>'
+def format_title(title, subtitle=None, subtitle_font_size=12, title_font_size= 20):
+    title = f'<span style="font-size: {title_font_size}px;"><b>{title}</b></span>'
     if not subtitle:
         return title
     subtitle = f'<span style="font-size: {subtitle_font_size}px; line-height: 20%;">{subtitle}</span>'
