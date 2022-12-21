@@ -290,8 +290,6 @@ def seasonal_decomp(df, freq, title, fig, inner):
     half_year_locator = mdates.MonthLocator(interval=3)
     month_year_formatter = mdates.DateFormatter('%b, %Y') 
     monthly_locator = mdates.MonthLocator()
-    print(results_df)
-
 
     ax0 = plt.Subplot(fig, inner[0])
     ax0.plot(results_df['date'],results_df['trend'], 'b')
@@ -329,3 +327,42 @@ def seasonal_decomp(df, freq, title, fig, inner):
     ax3.xaxis.set_minor_locator(monthly_locator)
     ax3.xaxis.set_major_formatter(month_year_formatter)
     fig.add_subplot(ax3)
+    
+#Creation of the function to make horizontal barchart
+def bar_plot(title, subtitle,df_country, df_trust, color):
+    fig, ax = plt.subplots(figsize=(12, 7))
+    fig.subplots_adjust(left=0.005, right=1, top=0.8, bottom=0.1)
+    # Add title
+    fig.text(0, 0.925, title, fontsize=20, fontweight="bold", fontfamily="Econ Sans Cnd")
+    # Add subtitle
+    fig.text(0, 0.875, subtitle, fontsize=15, fontfamily="Econ Sans Cnd")
+
+    ax.barh(df_country, df_trust, height=0.55, align="edge", color=color);
+    ax.xaxis.set_ticks([i * 20 for i in range(0, 5)])
+    ax.xaxis.set_ticklabels([i * 20 for i in range(0, 5)], size=13, fontfamily="Econ Sans Cnd", fontweight=100)
+
+    ax.set_xlim((0, 100))
+    ax.set_ylim((0, len(df_country)))
+
+    ax.set_axisbelow(True)
+    ax.grid(axis = "x", color="#A8BAC4", lw=1.2)
+    ax.spines["right"].set_visible(False)
+    ax.spines["top"].set_visible(False)
+    ax.spines["bottom"].set_visible(False)
+    ax.spines["left"].set_lw(1.5)
+    ax.spines["left"].set_capstyle("butt")
+
+    PAD = 0.3
+    k= 0
+    for country, trust in zip(df_country,df_trust):
+        x = 0
+        color = "white"
+        path_effects = None
+        ax.text(x + PAD, k + 0.5 / 2, country, 
+            color=color, fontfamily="Econ Sans Cnd", fontsize=18, va="center",
+        path_effects=path_effects) 
+        ax.text(trust + PAD, k + 0.5 / 2, str(trust)+'%', 
+            color=BLACK, fontfamily="Econ Sans Cnd", fontsize=13, va="center",
+            path_effects=path_effects
+        ) 
+        k = k+1
