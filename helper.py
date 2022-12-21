@@ -241,8 +241,18 @@ def get_cases_deaths_df(population_df: pd.DataFrame, country_dict: dict, start: 
 
     return deaths, cases, deaths_cumul, cases_cumul, deaths100k, deaths100k_cumul, cases100k, cases100k_cumul
 
-# Divide trust interval into nbr_category and label the countries
 def trust_category(trust, nbr_category, country_dict):
+    """
+    Divide trust interval into nbr_category and label the countries
+
+    Inputs:
+        trust: type of trust dataset
+        nbr_category
+        country_dict: original country dict
+
+    Output:
+         country_dict_cat : country dict sepearated in categories
+    """
     country_dict_ = country_dict.copy()
     country_dict_cat = {}
     min_trust = float(trust.min(axis=1))
@@ -261,3 +271,10 @@ def trust_category(trust, nbr_category, country_dict):
                 country_dict_[j] = [country_dict_[j], i]
 
     return  country_dict_cat 
+
+def format_title(title, subtitle=None, subtitle_font_size=12):
+    title = f'<b>{title}</b>'
+    if not subtitle:
+        return title
+    subtitle = f'<span style="font-size: {subtitle_font_size}px; line-height: 20%;">{subtitle}</span>'
+    return f'{title}<br>{subtitle}'
