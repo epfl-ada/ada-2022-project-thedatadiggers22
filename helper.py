@@ -278,3 +278,91 @@ def format_title(title, subtitle=None, subtitle_font_size=12, title_font_size= 2
         return title
     subtitle = f'<span style="font-size: {subtitle_font_size}px; line-height: 20%;">{subtitle}</span>'
     return f'{title}<br>{subtitle}'
+
+
+#Seasonality decomposition of time series
+def seasonal_decomp(df, freq, title, fig, inner):
+    result = seasonal_decompose(df,model='additive', period=freq)
+    results_df = pd.DataFrame({'trend': result.trend, 'seasonal': result.seasonal, 'resid': result.resid, 'observed': result.observed})
+    results_df['date'] = results_df.index
+    results_df['date'] = pd.to_datetime(results_df['date'])
+    
+    half_year_locator = mdates.MonthLocator(interval=3)
+    month_year_formatter = mdates.DateFormatter('%b, %Y') 
+    monthly_locator = mdates.MonthLocator()
+
+    ax0 = plt.Subplot(fig, inner[0])
+    ax0.plot(results_df['date'],results_df['trend'], 'b')
+    ax0.set_title(title)
+    ax0.set_xlabel('Trend')
+    ax0.set_ylabel('Value')
+    ax0.xaxis.set_major_locator(half_year_locator)
+    ax0.xaxis.set_minor_locator(monthly_locator)
+    ax0.xaxis.set_major_formatter(month_year_formatter)
+    fig.add_subplot(ax0)
+
+    ax1 = plt.Subplot(fig, inner[1])
+    ax1.plot(results_df['date'], results_df['seasonal'], 'm')
+    ax1.set_xlabel('Seasonal')
+    ax1.set_ylabel('Value')
+    ax1.xaxis.set_major_locator(half_year_locator)
+    ax1.xaxis.set_minor_locator(monthly_locator)
+    ax1.xaxis.set_major_formatter(month_year_formatter)
+    fig.add_subplot(ax1)
+
+    ax2 = plt.Subplot(fig, inner[2])
+    ax2.plot(results_df['date'], results_df['resid'], 'k')
+    ax2.set_xlabel('Residual')
+    ax2.set_ylabel('Value')
+    ax2.xaxis.set_major_locator(half_year_locator)
+    ax2.xaxis.set_minor_locator(monthly_locator)
+    ax2.xaxis.set_major_formatter(month_year_formatter)
+    fig.add_subplot(ax2)
+
+    ax3 = plt.Subplot(fig, inner[3])
+    ax3.plot(results_df['date'], results_df['observed'], 'y')
+    ax3.set_xlabel('Observed')
+    ax3.set_ylabel('Value')
+    ax3.xaxis.set_major_locator(half_year_locator)
+    ax3.xaxis.set_minor_locator(monthly_locator)
+    ax3.xaxis.set_major_formatter(month_year_formatter)
+    fig.add_subplot(ax3)
+    
+#Creation of the function to make horizontal barchart
+def bar_plot(title, subtitle,df_country, df_trust, color):
+    fig, ax = plt.subplots(figsize=(12, 7))
+    fig.subplots_adjust(left=0.005, right=1, top=0.8, bottom=0.1)
+    # Add title
+    fig.text(0, 0.925, title, fontsize=20, fontweight="bold", fontfamily="Econ Sans Cnd")
+    # Add subtitle
+    fig.text(0, 0.875, subtitle, fontsize=15, fontfamily="Econ Sans Cnd")
+
+    ax.barh(df_country, df_trust, height=0.55, align="edge", color=color);
+    ax.xaxis.set_ticks([i * 20 for i in range(0, 5)])
+    ax.xaxis.set_ticklabels([i * 20 for i in range(0, 5)], size=13, fontfamily="Econ Sans Cnd", fontweight=100)
+
+    ax.set_xlim((0, 100))
+    ax.set_ylim((0, len(df_country)))
+
+    ax.set_axisbelow(True)
+    ax.grid(axis = "x", color="#A8BAC4", lw=1.2)
+    ax.spines["right"].set_visible(False)
+    ax.spines["top"].set_visible(False)
+    ax.spines["bottom"].set_visible(False)
+    ax.spines["left"].set_lw(1.5)
+    ax.spines["left"].set_capstyle("butt")
+
+    PAD = 0.3
+    k= 0
+    for country, trust in zip(df_country,df_trust):
+        x = 0
+        color = "white"
+        path_effects = None
+        ax.text(x + PAD, k + 0.5 / 2, country, 
+            color=color, fontfamily="Econ Sans Cnd", fontsize=18, va="center",
+        path_effects=path_effects) 
+        ax.text(trust + PAD, k + 0.5 / 2, str(trust)+'%', 
+            color=BLACK, fontfamily="Econ Sans Cnd", fontsize=13, va="center",
+            path_effects=path_effects
+        ) 
+        k = k+1
