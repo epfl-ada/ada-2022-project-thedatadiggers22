@@ -428,3 +428,47 @@ def mapcharts(df, color_serie, hover_serie, title, subtile= None, font_title= 16
 
   fig.show()
   fig.write_html("data/{}_mapchart.html".format(color_serie),default_width= 500, default_height= 500)
+
+
+
+def get_mobility_df(country_dict):
+    '''
+    Function to get the mobility dataset and classifies it into moving and covid category
+    
+    Input : 
+
+        - country_dict : countries we are interested in
+
+    Output : mobility_df
+    '''
+    data_folder = 'data_2/'
+    #Download mobility and intervention files
+    google_mobility = pd.read_csv(data_folder+'Global_Mobility_Report.csv.zip')
+
+    #Change name of the columns
+    categories = ["Retail and Recreations", "Grocery and Pharmacy", "Parks","Transit stations", "Workplace", "Residential"]
+    google_mobility = google_mobility.rename(dict(zip(google_mobility.columns[8:],categories)), axis = 1)
+
+    #Transform date string to datetime
+    google_mobility['date'] = pd.to_datetime(google_mobility['date'])
+
+    #Delete columns about region
+    google_mobility = google_mobility.drop(google_mobility.iloc[:,2:7], axis = 1)
+
+    #Keep same dates as for corona wikipedia pages
+    google_mobility = google_mobility.loc[(google_mobility['date'] < "2020-08-01") & (google_mobility['date'] >= "2020-01-22")]
+
+    #Regroup all data per country and per date and take the average
+    mobility = google_mobility.groupby(["country_region_code","country_region","date"]).mean()
+
+    #Keep only the country that we are interested in
+    mobility = mobility[mobility.index.get_level_values('country_region').isin(list(country_dict.keys()))]
+
+    # Group together Parks, Retail and Recreations, Transit stations and Workplace by taking the mean of them
+    mobility['moving category'] = mobility[['Retail and Recreations', 'Parks', 'Transit stations', 'Workplace']].mean(axis=1)
+    #Group together Grocey and Pharmacy and Residential by taking the mean of them
+    mobility['covid category'] = mobility[['Grocery and Pharmacy', 'Residential']].mean(axis=1)
+
+    return mobility
+
+
