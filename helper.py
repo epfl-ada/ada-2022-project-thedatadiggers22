@@ -3,6 +3,7 @@ import numpy as np
 import requests
 import urllib
 import ssl
+import datetime
 from iso3166 import countries
 import plotly.express as px
 
@@ -428,3 +429,13 @@ def mapcharts(df, color_serie, hover_serie, title, subtile= None, font_title= 16
 
   fig.show()
   fig.write_html("data/{}_mapchart.html".format(color_serie),default_width= 500, default_height= 500)
+
+def get_race_bar_df(df):
+    df_br = df.rename(columns= {v: k for k, v in get_country_dict('original').items()}).reset_index().rename(columns = {'index': 'Country'})
+    df_br = df_br.drop('date', axis= 1)
+    df_br = df_br.rolling(30, min_periods=1).sum()
+    df_br['index']= df_br.reset_index()['index'].apply(lambda x: (pd.to_datetime('2020-01-22') + datetime.timedelta(days= x)))
+    df_br = df_br[df_br['index'].dt.day==1]
+    df_br.index = df_br['index'].apply(lambda x: "{}-{}".format(x.month, x.year))
+    df_br = df_br.drop('index', axis= 1)
+    return df_br
