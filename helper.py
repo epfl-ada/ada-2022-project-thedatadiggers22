@@ -1,7 +1,10 @@
 import pandas as pd
+import numpy as np
 import requests
 import urllib
 import ssl
+from iso3166 import countries
+import plotly.express as px
 
 COUNTRY_OWN_LANG = {"Italy" : "it", "Russia": "ru", "China": "zh", "Albania": "sq", 
 "Bangladesh": "bn", "Botswana": "tn", "Cambodia": "km", "Croatia": "hr", "Greece": "el", "Sweden": "sv", "Finland": "fi", "Norway": "no",
@@ -366,3 +369,62 @@ def bar_plot(title, subtitle,df_country, df_trust, color):
             path_effects=path_effects
         ) 
         k = k+1
+
+def mapcharts_df(df, country_dict, interest):
+    # Empty dataframe for the map chart
+    df_mapchart = pd.DataFrame({})
+    # Reverse the dictionary to map language codes to country names
+    inv_country_dict = {v: k for k, v in country_dict.items()}
+    # Add exceptions for country names that differ from their language codes
+    other_country_name = {
+    "Russia": "Russian Federation",
+    "Turkey":"Türkiye",
+    "Vietnam" : "Viet Nam",
+    "South Korea" : "Korea, Democratic People's Republic of"
+    }
+    # Iterate through each country build the correct dataframe for the mapchart
+    for country in country_dict.keys():
+        
+        df_tmp = pd.DataFrame(df.rename(columns= inv_country_dict)[country])
+        df_tmp = df_tmp.rename(columns= {country: interest})
+        if (country in list(other_country_name.keys())):
+            df_tmp['Country_code'] = [countries.get(other_country_name[country]).alpha3] * len(df)
+        else:
+            df_tmp['Country_code'] = [countries.get(country).alpha3] * len(df_tmp)
+        df_tmp['date'] = df_tmp.index
+        df_tmp['country'] = country
+
+        df_tmp = df_tmp.iloc[::5,:]
+        df_mapchart = pd.concat([df_mapchart, df_tmp], axis= 0)
+    return df_mapchart
+
+def mapcharts(df, color_serie, hover_serie, title, subtile= None, font_title= 16, font_subtile= 12, colorcode= 'Reds'):
+# Create the map chart
+  fig = px.choropleth(df, locations= "Country_code",
+                      color= df[color_serie],
+                      animation_frame= 'date',
+                      hover_name= df[hover_serie], # column to add to hover information
+                      range_color= [0,np.percentile(df[color_serie],99)],
+                      color_continuous_scale= colorcode, 
+                      title= format_title(title, subtile, font_subtile, font_title),
+                      width= 700,
+                      height= 700)
+
+  #Update layout, menus and buttons options
+  fig.update_layout(transition = {'duration': 2})
+  fig.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 0 # buttons
+  fig.layout.updatemenus[0].buttons[0].args[1]["transition"]["duration"] = 0
+  fig.layout.updatemenus[0].buttons[1].args[1]["frame"]["duration"] = 0
+  fig.layout.updatemenus[0].buttons[1].args[1]["transition"]["duration"] = 1
+  fig.layout.sliders[0].steps[0].args[1]["frame"]["duration"] = 0 # slider
+  fig.layout.updatemenus[0].buttons[0].args[1]["visible"] = False
+
+  #Zoom on specific part of the map
+  fig.update_geos(
+      center=dict(lon=80, lat=35),
+      projection_type="mercator",
+      lataxis_range=[-50,80], lonaxis_range=[-10, 230]
+  )
+
+  fig.show()
+  fig.write_html("data/{}_mapchart.html".format(color_serie),default_width= 500, default_height= 500)
