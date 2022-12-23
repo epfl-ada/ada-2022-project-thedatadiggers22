@@ -28,6 +28,12 @@ COUNTRY_OWN_LANG_TRUST_GOV_MOBILITY= {"Italy" : "it", "Russia": "ru",
  "Romania": "ro", "Thailand": "th", "Mongolia": "mn"}
  
 def get_country_dict(dict):
+    '''
+    Function to get the dict of countries of interest for specific dataset
+    Inputs : 
+        - dict : dataset  needed (original -> COVID-19; other trust dataset)
+    Output : corresponding dict
+    '''
     if dict == 'original' :
         return COUNTRY_OWN_LANG
     elif dict == 'trust gov' :
@@ -284,46 +290,17 @@ def format_title(title, subtitle=None, subtitle_font_size=12, title_font_size= 2
     subtitle = f'<span style="font-size: {subtitle_font_size}px; line-height: 20%;">{subtitle}</span>'
     return f'{title}<br>{subtitle}'
     
-#Creation of the function to make horizontal barchart
-def bar_plot(title, subtitle,df_country, df_trust, color):
-    fig, ax = plt.subplots(figsize=(12, 7))
-    fig.subplots_adjust(left=0.005, right=1, top=0.8, bottom=0.1)
-    # Add title
-    fig.text(0, 0.925, title, fontsize=20, fontweight="bold", fontfamily="Econ Sans Cnd")
-    # Add subtitle
-    fig.text(0, 0.875, subtitle, fontsize=15, fontfamily="Econ Sans Cnd")
-
-    ax.barh(df_country, df_trust, height=0.55, align="edge", color=color);
-    ax.xaxis.set_ticks([i * 20 for i in range(0, 5)])
-    ax.xaxis.set_ticklabels([i * 20 for i in range(0, 5)], size=13, fontfamily="Econ Sans Cnd", fontweight=100)
-
-    ax.set_xlim((0, 100))
-    ax.set_ylim((0, len(df_country)))
-
-    ax.set_axisbelow(True)
-    ax.grid(axis = "x", color="#A8BAC4", lw=1.2)
-    ax.spines["right"].set_visible(False)
-    ax.spines["top"].set_visible(False)
-    ax.spines["bottom"].set_visible(False)
-    ax.spines["left"].set_lw(1.5)
-    ax.spines["left"].set_capstyle("butt")
-
-    PAD = 0.3
-    k= 0
-    for country, trust in zip(df_country,df_trust):
-        x = 0
-        color = "white"
-        path_effects = None
-        ax.text(x + PAD, k + 0.5 / 2, country, 
-            color=color, fontfamily="Econ Sans Cnd", fontsize=18, va="center",
-        path_effects=path_effects) 
-        ax.text(trust + PAD, k + 0.5 / 2, str(trust)+'%', 
-            color=BLACK, fontfamily="Econ Sans Cnd", fontsize=13, va="center",
-            path_effects=path_effects
-        ) 
-        k = k+1
 
 def mapcharts_df(df, country_dict, interest):
+    '''
+    Function create dataframe used for mapcharts
+    
+    Input : 
+        - df : raw dataframe for the mapchart
+        - country_dict : dict of countries of interest
+        - interest : scope of analysis deaths, pageviews or cases
+    Output : df_mapchart
+    '''
     # Empty dataframe for the map chart
     df_mapchart = pd.DataFrame({})
     # Reverse the dictionary to map language codes to country names
@@ -352,42 +329,66 @@ def mapcharts_df(df, country_dict, interest):
     return df_mapchart
 
 def mapcharts(df, color_serie, hover_serie, title, subtile= None, font_title= 16, font_subtile= 12, colorcode= 'Reds'):
-# Create the map chart
-  fig = px.choropleth(df, locations= "Country_code",
-                      color= df[color_serie],
-                      animation_frame= 'date',
-                      hover_name= df[hover_serie], # column to add to hover information
-                      range_color= [0,np.percentile(df[color_serie],99)],
-                      color_continuous_scale= colorcode, 
-                      title= format_title(title, subtile, font_subtile, font_title),
-                      width= 700,
-                      height= 700)
+    '''
+    Function create mapcharts
+    
+    Input : 
+        - df : data used for the plot
+        - color_serie : variable indicated by color gradient
+        - hover_serie : variable displayed when hover on
+        - title
+        - subtitle
+        -font_title
+        -font_subtile
+        -colorcode : color code for the map
+    Output : 
+    '''
+    #create a new map chart
+    fig = px.choropleth(df, locations= "Country_code",
+                        color= df[color_serie],
+                        animation_frame= 'date',
+                        hover_name= df[hover_serie], # column to add to hover information
+                        range_color= [0,np.percentile(df[color_serie],99)],
+                        color_continuous_scale= colorcode, 
+                        title= format_title(title, subtile, font_subtile, font_title),
+                        width= 700,
+                        height= 700)
 
-  #Update layout, menus and buttons options
-  fig.update_layout(transition = {'duration': 2})
-  fig.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 0 # buttons
-  fig.layout.updatemenus[0].buttons[0].args[1]["transition"]["duration"] = 0
-  fig.layout.updatemenus[0].buttons[1].args[1]["frame"]["duration"] = 0
-  fig.layout.updatemenus[0].buttons[1].args[1]["transition"]["duration"] = 1
-  fig.layout.sliders[0].steps[0].args[1]["frame"]["duration"] = 0 # slider
-  fig.layout.updatemenus[0].buttons[0].args[1]["visible"] = False
+    #Update layout, menus and buttons options
+    fig.update_layout(transition = {'duration': 2})
+    fig.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 0 # buttons
+    fig.layout.updatemenus[0].buttons[0].args[1]["transition"]["duration"] = 0
+    fig.layout.updatemenus[0].buttons[1].args[1]["frame"]["duration"] = 0
+    fig.layout.updatemenus[0].buttons[1].args[1]["transition"]["duration"] = 1
+    fig.layout.sliders[0].steps[0].args[1]["frame"]["duration"] = 0 # slider
+    fig.layout.updatemenus[0].buttons[0].args[1]["visible"] = False
 
-  #Zoom on specific part of the map
-  fig.update_geos(
-      center=dict(lon=80, lat=35),
-      projection_type="mercator",
-      lataxis_range=[-50,80], lonaxis_range=[-10, 230]
-  )
+    #Zoom on specific part of the map
+    fig.update_geos(
+        center=dict(lon=80, lat=35),
+        projection_type="mercator",
+        lataxis_range=[-50,80], lonaxis_range=[-10, 230]
+    )
 
-  fig.show()
-  fig.write_html("results_for_website/{}_mapchart.html".format(color_serie),default_width= 500, default_height= 500)
+    fig.show()
+    fig.write_html("results_for_website/{}_mapchart.html".format(color_serie),default_width= 500, default_height= 500)
 
 def get_race_bar_df(df):
+    '''
+    Function to put in form a dataframe to create the bar chart race video
+    
+    Input : 
+        - df : raw dataframe for the race
+    Output : df_br
+    '''
     df_br = df.rename(columns= {v: k for k, v in get_country_dict('original').items()}).reset_index().rename(columns = {'index': 'Country'})
     df_br = df_br.drop('date', axis= 1)
+    #taking the rolling sum monthly
     df_br = df_br.rolling(30, min_periods=1).sum()
+    #pset index in date format again
     df_br['index']= df_br.reset_index()['index'].apply(lambda x: (pd.to_datetime('2020-01-22') + datetime.timedelta(days= x)))
     df_br = df_br[df_br['index'].dt.day==1]
+    #format as period mm-yyyy
     df_br.index = df_br['index'].apply(lambda x: "{}-{}".format(x.month, x.year))
     df_br = df_br.drop('index', axis= 1)
     return df_br
