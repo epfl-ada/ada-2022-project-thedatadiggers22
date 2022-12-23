@@ -6,6 +6,7 @@ import ssl
 import datetime
 from iso3166 import countries
 import plotly.express as px
+import matplotlib as plt
 
 COUNTRY_OWN_LANG = {"Italy" : "it", "Russia": "ru", "China": "zh", "Albania": "sq", 
 "Bangladesh": "bn", "Botswana": "tn", "Cambodia": "km", "Croatia": "hr", "Greece": "el", "Sweden": "sv", "Finland": "fi", "Norway": "no",
@@ -282,55 +283,6 @@ def format_title(title, subtitle=None, subtitle_font_size=12, title_font_size= 2
         return title
     subtitle = f'<span style="font-size: {subtitle_font_size}px; line-height: 20%;">{subtitle}</span>'
     return f'{title}<br>{subtitle}'
-
-# TODO PB ICI ================================================
-#Seasonality decomposition of time series
-def seasonal_decomp(df, freq, title, fig, inner):
-    result = seasonal_decompose(df,model='additive', period=freq)
-    results_df = pd.DataFrame({'trend': result.trend, 'seasonal': result.seasonal, 'resid': result.resid, 'observed': result.observed})
-    results_df['date'] = results_df.index
-    results_df['date'] = pd.to_datetime(results_df['date'])
-    
-    half_year_locator = mdates.MonthLocator(interval=3)
-    month_year_formatter = mdates.DateFormatter('%b, %Y') 
-    monthly_locator = mdates.MonthLocator()
-
-    ax0 = plt.Subplot(fig, inner[0])
-    ax0.plot(results_df['date'],results_df['trend'], 'b')
-    ax0.set_title(title)
-    ax0.set_xlabel('Trend')
-    ax0.set_ylabel('Value')
-    ax0.xaxis.set_major_locator(half_year_locator)
-    ax0.xaxis.set_minor_locator(monthly_locator)
-    ax0.xaxis.set_major_formatter(month_year_formatter)
-    fig.add_subplot(ax0)
-
-    ax1 = plt.Subplot(fig, inner[1])
-    ax1.plot(results_df['date'], results_df['seasonal'], 'm')
-    ax1.set_xlabel('Seasonal')
-    ax1.set_ylabel('Value')
-    ax1.xaxis.set_major_locator(half_year_locator)
-    ax1.xaxis.set_minor_locator(monthly_locator)
-    ax1.xaxis.set_major_formatter(month_year_formatter)
-    fig.add_subplot(ax1)
-
-    ax2 = plt.Subplot(fig, inner[2])
-    ax2.plot(results_df['date'], results_df['resid'], 'k')
-    ax2.set_xlabel('Residual')
-    ax2.set_ylabel('Value')
-    ax2.xaxis.set_major_locator(half_year_locator)
-    ax2.xaxis.set_minor_locator(monthly_locator)
-    ax2.xaxis.set_major_formatter(month_year_formatter)
-    fig.add_subplot(ax2)
-
-    ax3 = plt.Subplot(fig, inner[3])
-    ax3.plot(results_df['date'], results_df['observed'], 'y')
-    ax3.set_xlabel('Observed')
-    ax3.set_ylabel('Value')
-    ax3.xaxis.set_major_locator(half_year_locator)
-    ax3.xaxis.set_minor_locator(monthly_locator)
-    ax3.xaxis.set_major_formatter(month_year_formatter)
-    fig.add_subplot(ax3)
     
 #Creation of the function to make horizontal barchart
 def bar_plot(title, subtitle,df_country, df_trust, color):
