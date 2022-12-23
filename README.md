@@ -114,11 +114,11 @@ We are using ZenHub to create and track our issues effectively. As this project 
 Team members were free to participate in all different tasks depending on priority of said tasks. General distribution was as follow:
 <ol>
   <li>Data pipelines and data wrangling: Robin & Carl,</li>
-  <li>Data visualization and analysis methods: Arthur & Charlotte,</li>
+  <li>Data visualization and analysis methods: Arthur & Charlotte & Robin,</li>
   <li>Data analysis: All,</li>
   <li>Trust dataset: Charlotte,</li>
   <li>Mobility dataset: Arthur,</li>
-  <li>Building site: Robin & Carl,</li>
+  <li>Building site: Carl,</li>
   <li>Final redaction: All.</li>
 </ol>
 </p>
