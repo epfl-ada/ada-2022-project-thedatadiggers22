@@ -6,7 +6,6 @@ import ssl
 import datetime
 from iso3166 import countries
 import plotly.express as px
-import matplotlib as plt
 
 COUNTRY_OWN_LANG = {"Italy" : "it", "Russia": "ru", "China": "zh", "Albania": "sq", 
 "Bangladesh": "bn", "Botswana": "tn", "Cambodia": "km", "Croatia": "hr", "Greece": "el", "Sweden": "sv", "Finland": "fi", "Norway": "no",
