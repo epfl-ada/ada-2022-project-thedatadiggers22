@@ -283,7 +283,7 @@ def format_title(title, subtitle=None, subtitle_font_size=12, title_font_size= 2
     subtitle = f'<span style="font-size: {subtitle_font_size}px; line-height: 20%;">{subtitle}</span>'
     return f'{title}<br>{subtitle}'
 
-
+# TODO PB ICI ================================================
 #Seasonality decomposition of time series
 def seasonal_decomp(df, freq, title, fig, inner):
     result = seasonal_decompose(df,model='additive', period=freq)
@@ -428,7 +428,7 @@ def mapcharts(df, color_serie, hover_serie, title, subtile= None, font_title= 16
   )
 
   fig.show()
-  fig.write_html("data/{}_mapchart.html".format(color_serie),default_width= 500, default_height= 500)
+  fig.write_html("results_for_website/{}_mapchart.html".format(color_serie),default_width= 500, default_height= 500)
 
 def get_race_bar_df(df):
     df_br = df.rename(columns= {v: k for k, v in get_country_dict('original').items()}).reset_index().rename(columns = {'index': 'Country'})
