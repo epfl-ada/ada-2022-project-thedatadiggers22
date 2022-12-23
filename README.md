@@ -2,8 +2,8 @@
 
 ## Description of the different files
 <ol align="justify">
-    <li>wiki_data_loader.ipynb : TODO</li>
-    <li>milestone3.ipynb : Notebook with all our investigation of the different datasets.</li>
+    <li>wiki_data_loader.ipynb : Notebook used to create our covid related pageviews dataset.</li>
+    <li>milestone3.ipynb : Notebook with all our investigation of the different datasets. We use these results to create our data story.</li>
     <li>helpers.py : File containing the different functions used for our analysis.</li>
 </ol>
 
